@@ -1,0 +1,42 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  .project-image-wrapper {
+    justify-self: center;
+    margin: 20px;
+    position: relative;
+    &:hover button {
+      visibility: visible;
+      z-index: 1;
+    }
+  }
+  button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .project-image {
+    border-radius: 15px;
+    filter: brightness(1);
+    transition: ease-in 500ms;
+    &:hover {
+      filter: brightness(0.001);
+    }
+  }
+}
+
+/*media queries*/
+@media (max-width: 960px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (max-width: 676px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}

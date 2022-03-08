@@ -1,0 +1,18 @@
+body {
+  background-color: #c3cfe2;
+}
+
+main {
+  display: grid;
+  font-size: 18px;
+}
+
+h1 {
+  font-weight: 100;
+  font-style: italic;
+  padding-left: 20px;
+}
+
+@import "./testimonial";
+@import "./portfoliogrid";
+@import "./socialmedia";
